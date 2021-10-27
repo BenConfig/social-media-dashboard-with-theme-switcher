@@ -4,6 +4,7 @@
 /*                         Header                         */
 /* ------------------------------------------------------ */
 .header {
+    width: 100%;
     max-width: 47rem;
     font-size: .875rem;
     margin: auto;
@@ -31,6 +32,7 @@
         display: flex;
         width: 3rem;
         height: 1.5rem;
+        padding: 0;
         border: .1875rem solid transparent;
         border-radius: var(--br-pill);
         margin-left: auto;

@@ -14,13 +14,13 @@ Users should be able to:
 ## Screenshot
 
 ### Mobile
-![](screenshot-mobile.jpg)
+![](screenshot-mobile.png)
 
 ### Tablet
-![](screenshot-tablet.jpg)
+![](screenshot-tablet.png)
 
 ### Desktop
-![](screenshot-desktop.jpg)
+![](screenshot-desktop.png)
 
 
 ## Built with

@@ -8,6 +8,16 @@ DARK_MODE_SWITCH.addEventListener('click', e => {
     DARK_MODE_SWITCH.classList.toggle('on');
     // ... and toggle the 'dark' class for the root element
     document.documentElement.classList.toggle('dark')
+    // If 'aria-checked' attribute value is 'false'...
+    if (DARK_MODE_SWITCH.getAttribute('aria-checked') === 'false') {
+        // change the value to 'true'
+        DARK_MODE_SWITCH.setAttribute('aria-checked', 'true');
+    }
+    // Else if 'aria-checked' attribute value is 'true'...
+    else if (DARK_MODE_SWITCH.getAttribute('aria-checked') === 'true') {
+        // change the value to 'false'
+        DARK_MODE_SWITCH.setAttribute('aria-checked', 'false');
+    }
 })
 
 // For each stat with the 'up' class...

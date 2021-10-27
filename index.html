@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/dist/css/main.css">
+
+    <title>Frontend Mentor | Social Media Dashboard</title>
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="header">
+
+      <h1 class="header__page-title">Social Media Dashboard</h1>
+      <p class="header__total-followers">Total Followers: 23,004</p>
+
+      <div class="header__dark-mode-switch-container">
+        <label class="header__dark-mode-label" for="dark-mode-switch">Dark Mode</label>
+        <span 
+          class="header__dark-mode-switch" 
+          id="dark-mode-switch" 
+          role="switch" 
+          aria-checked="false">
+          <span class="header__dark-mode-switch--inner-circle"></span>
+        </span>
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <!-- Followers Section -->
+      <section class="followers-section">
+
+        <h2 class="sr-only">Followers</h2>
+
+        <article class="followers-section__card">
+          <a class="followers-section__link followers-section__link--facebook" href="#">
+            <h3 class="sr-only">Facebook Followers</h3>
+            <p class="followers-section__handle followers-section__handle--facebook">@nathanf</p>
+            <p class="followers-section__stat">1987 Followers</p>
+            <p class="followers-section__change up">
+              <span>12 Today</span>
+            </p>
+          </a>
+        </article>
+
+        <article class="followers-section__card">
+          <a class="followers-section__link followers-section__link--twitter" href="#">
+            <h3 class="sr-only">Twitter Followers</h3>
+            <p class="followers-section__handle followers-section__handle--twitter">@nathanf</p>
+            <p class="followers-section__stat">1044 Followers</p>
+            <p class="followers-section__change up">
+              <span>99 Today</span>
+            </p>
+          </a>
+        </article>
+
+        <article class="followers-section__card">
+          <a class="followers-section__link followers-section__link--instagram" href="#">
+            <h3 class="sr-only">Instagram Followers</h3>
+            <p class="followers-section__handle followers-section__handle--instagram">@realnathanf</p>
+            <p class="followers-section__stat">11k Followers</p>
+            <p class="followers-section__change up">
+              <span>1099 Today</span>
+            </p>
+          </a>
+        </article>
+
+        <article class="followers-section__card">
+          <a class="followers-section__link followers-section__link--youtube" href="#">
+            <h3 class="sr-only">Youtube Followers</h3>
+            <p class="followers-section__handle followers-section__handle--youtube">Nathan F.</p>
+            <p class="followers-section__stat">8239 Subscribers</p>
+            <p class="followers-section__change down">
+              <span>144 Today</span>
+            </p>
+          </a>
+        </article>
+
+      </section>
+
+      <!-- Overview Section -->
+      <section class="overview-section">
+
+        <h2 class="overview-section__section-heading">Overview - Today</h2>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--facebook" href="#">
+            <h3 class="sr-only">Facebook Page Views</h3>
+            <p class="overview-section__stat">Page Views <span>87</span></p>
+            <p class="overview-section__change up">3%</p>
+          </a>
+        </article>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--facebook" href="#">
+            <h3 class="sr-only">Facebook Likes</h3>
+            <p class="overview-section__stat">Likes <span>52</span></p>
+            <p class="overview-section__change down">2%</p>
+          </a>
+        </article>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--instagram" href="#">
+            <h3 class="sr-only">Instagram Likes</h3>
+            <p class="overview-section__stat">Likes <span>5462</span></p>
+            <p class="overview-section__change up">2257%</p>
+          </a>
+        </article>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--instagram" href="#">
+            <h3 class="sr-only">Instagram Profile Views</h3>
+            <p class="overview-section__stat">Profile Views <span>52k</span></p>
+            <p class="overview-section__change up">1375%</p>
+          </a>
+        </article>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--twitter" href="#">
+            <h3 class="sr-only">Twitter Retweets</h3>
+            <p class="overview-section__stat">Retweets <span>117</span></p>
+            <p class="overview-section__change up">303%</p>
+          </a>
+        </article>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--twitter" href="#">
+            <h3 class="sr-only">Twitter Likes</h3>
+            <p class="overview-section__stat">Likes <span>507</span></p>
+            <p class="overview-section__change up">553%</p>
+          </a>
+        </article>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--youtube" href="#">
+            <h3 class="sr-only">Youtube Likes</h3>
+            <p class="overview-section__stat">Likes <span>107</span></p>
+            <p class="overview-section__change down">19%</p>
+          </a>
+        </article>
+
+        <article class="overview-section__card">
+          <a class="overview-section__link overview-section__link--youtube" href="#">
+            <h3 class="sr-only">Youtube Total Views</h3>
+            <p class="overview-section__stat">Total Views <span>1407</span></p>
+            <p class="overview-section__change down">12%</p>
+          </a>
+        </article>
+
+      </section>
+
+    </main>
+    
+    <script src="main.js"></script>
+  </body>
+
+</html>

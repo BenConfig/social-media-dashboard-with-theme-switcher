@@ -63,9 +63,7 @@
     box-sizing: border-box;
 }
 
-:focus {
-    outline: 2  px solid var(--clr-text-high-contrast);
-}
+:focus { outline: 2px solid var(--clr-text-high-contrast); }
 
 body,
 h1, h2, h3,

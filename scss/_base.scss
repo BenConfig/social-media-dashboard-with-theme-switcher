@@ -26,7 +26,7 @@
     /* ------------------ Dark Mode Colors ------------------ */
     &.dark {
         --clr-body-bg-main: hsl(230, 17%, 14%);
-        --clr-body-bg-top: hsl(232, 19%, 18%);
+        --clr-body-bg-top: hsl(232, 19%, 15%);
         --clr-card-bg: hsl(228, 28%, 20%);
         --clr-card-hover: hsla(0, 0%, 100%, .1);
         --clr-text: hsl(228, 34%, 66%);
@@ -59,7 +59,9 @@
 /* ------------------------------------------------------ */
 /*                Resets and Global Styles                */
 /* ------------------------------------------------------ */
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box;
+}
 
 :focus {
     outline: 2  px solid var(--clr-text-high-contrast);
@@ -87,6 +89,7 @@ body {
     padding: 2.25rem clamp(1.5rem, 6.5vw, 5.5rem) 2rem;
     color: var(--clr-text);
     background: var(--clr-body-bg-main);
+    transition: background 400ms;
 
     &::before {
         content: '';

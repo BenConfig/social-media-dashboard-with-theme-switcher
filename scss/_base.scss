@@ -41,6 +41,9 @@
     --br-pill: 100vmax;
     --br-bg: 1.25rem;
     --br-rounded: .375rem;
+
+    /* ----------------- Animation Duration ----------------- */
+    --anim-duration: 200ms;
 }
 
 //////// Mixins ////////
@@ -85,7 +88,7 @@ body {
     padding: 2.25rem clamp(1.5rem, 6.5vw, 5.5rem) 2rem;
     color: var(--clr-text);
     background: var(--clr-body-bg-main);
-    transition: background 400ms;
+    transition: background var(--anim-duration);
 
     &::before {
         content: '';

@@ -57,7 +57,7 @@
             border-radius: inherit;
             background: var(--clr-toggle-hover);
             opacity: 0;
-            transition: opacity 200ms;
+            transition: opacity var(--anim-duration);
         }
 
         &:hover::after { opacity: 1; }
@@ -71,7 +71,7 @@
             border-radius: inherit;
             background: var(--clr-body-bg-top);
             transform: translateX(1.5rem);
-            transition: transform 200ms;
+            transition: transform var(--anim-duration);
         }
 
         /* Toggle Animation */
@@ -146,7 +146,7 @@
             border-radius: inherit;
             background: var(--clr-card-hover);
             opacity: 0;
-            transition: opacity 200ms;
+            transition: opacity var(--anim-duration);
         }
 
         &:hover::after { opacity: 1; }
@@ -159,13 +159,13 @@
         font-size: .75rem;
         margin-bottom: .9375rem;
 
-        &--facebook::before { content: url('/images/icon-facebook.svg'); }
+        &--facebook::before { content: url('../../images/icon-facebook.svg'); }
 
-        &--twitter::before { content: url('/images/icon-twitter.svg'); }
+        &--twitter::before { content: url('../../images/icon-twitter.svg'); }
 
-        &--instagram::before { content: url('/images/icon-instagram.svg'); }
+        &--instagram::before { content: url('../../images/icon-instagram.svg'); }
 
-        &--youtube::before { content: url('/images/icon-youtube.svg'); }
+        &--youtube::before { content: url('../../images/icon-youtube.svg'); }
     }
 
     &__stat {
@@ -227,13 +227,13 @@
             justify-content: flex-end;
         }
 
-        &--facebook::before { content: url(/images/icon-facebook.svg); }
+        &--facebook::before { content: url('../../images/icon-facebook.svg'); }
 
-        &--instagram::before { content: url(/images/icon-instagram.svg); }
+        &--instagram::before { content: url('../../images/icon-instagram.svg'); }
 
-        &--twitter::before { content: url(/images/icon-twitter.svg); }
+        &--twitter::before { content: url('../../images/icon-twitter.svg'); }
 
-        &--youtube::before { content: url(/images/icon-youtube.svg); }
+        &--youtube::before { content: url('../../images/icon-youtube.svg'); }
 
         &::after {
             content: '';
@@ -242,7 +242,7 @@
             border-radius: inherit;
             background: var(--clr-card-hover);
             opacity: 0;
-            transition: opacity 200ms;
+            transition: opacity var(--anim-duration);
         }
 
         &:hover::after { opacity: 1; }

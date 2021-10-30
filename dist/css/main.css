@@ -27,6 +27,8 @@
   --br-pill: 100vmax;
   --br-bg: 1.25rem;
   --br-rounded: .375rem;
+  /* ----------------- Animation Duration ----------------- */
+  --anim-duration: 200ms;
 }
 :root.dark {
   --clr-body-bg-main: hsl(230, 17%, 14%);
@@ -72,7 +74,7 @@ body {
   padding: 2.25rem clamp(1.5rem, 6.5vw, 5.5rem) 2rem;
   color: var(--clr-text);
   background: var(--clr-body-bg-main);
-  transition: background 400ms;
+  transition: background var(--anim-duration);
 }
 body::before {
   content: "";
@@ -158,7 +160,7 @@ a {
   border-radius: inherit;
   background: var(--clr-toggle-hover);
   opacity: 0;
-  transition: opacity 200ms;
+  transition: opacity var(--anim-duration);
 }
 .header__dark-mode-switch:hover::after {
   opacity: 1;
@@ -171,7 +173,7 @@ a {
   border-radius: inherit;
   background: var(--clr-body-bg-top);
   transform: translateX(1.5rem);
-  transition: transform 200ms;
+  transition: transform var(--anim-duration);
 }
 .header__dark-mode-switch.on {
   background: var(--clr-toggle-hover);
@@ -245,7 +247,7 @@ a {
   border-radius: inherit;
   background: var(--clr-card-hover);
   opacity: 0;
-  transition: opacity 200ms;
+  transition: opacity var(--anim-duration);
 }
 .followers-section__link:hover::after {
   opacity: 1;
@@ -258,16 +260,16 @@ a {
   margin-bottom: 0.9375rem;
 }
 .followers-section__handle--facebook::before {
-  content: url("/images/icon-facebook.svg");
+  content: url("../../images/icon-facebook.svg");
 }
 .followers-section__handle--twitter::before {
-  content: url("/images/icon-twitter.svg");
+  content: url("../../images/icon-twitter.svg");
 }
 .followers-section__handle--instagram::before {
-  content: url("/images/icon-instagram.svg");
+  content: url("../../images/icon-instagram.svg");
 }
 .followers-section__handle--youtube::before {
-  content: url("/images/icon-youtube.svg");
+  content: url("../../images/icon-youtube.svg");
 }
 .followers-section__stat {
   max-width: 20ch;
@@ -326,16 +328,16 @@ a {
   justify-content: flex-end;
 }
 .overview-section__link--facebook::before {
-  content: url(/images/icon-facebook.svg);
+  content: url("../../images/icon-facebook.svg");
 }
 .overview-section__link--instagram::before {
-  content: url(/images/icon-instagram.svg);
+  content: url("../../images/icon-instagram.svg");
 }
 .overview-section__link--twitter::before {
-  content: url(/images/icon-twitter.svg);
+  content: url("../../images/icon-twitter.svg");
 }
 .overview-section__link--youtube::before {
-  content: url(/images/icon-youtube.svg);
+  content: url("../../images/icon-youtube.svg");
 }
 .overview-section__link::after {
   content: "";
@@ -344,7 +346,7 @@ a {
   border-radius: inherit;
   background: var(--clr-card-hover);
   opacity: 0;
-  transition: opacity 200ms;
+  transition: opacity var(--anim-duration);
 }
 .overview-section__link:hover::after {
   opacity: 1;
